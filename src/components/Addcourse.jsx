@@ -88,7 +88,7 @@ function Addcourse() {
             onClick={async () => {
               try {
                 await axios.post(
-                  "http://localhost:3000/admin/courses",
+                  "https://course-app-server-five.vercel.app/admin/courses",
                   {
                     title: title,
                     description: description,

@@ -17,7 +17,7 @@ function Signup() {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:3000/admin/signup",
+        "https://course-app-server-five.vercel.app/admin/signup",
         { username: email, password: password },
         { headers: { "Content-Type": "application/json" } }
       );

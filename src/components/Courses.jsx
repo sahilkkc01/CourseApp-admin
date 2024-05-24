@@ -12,7 +12,7 @@ function Courses() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/admin/courses/",
+          "https://course-app-server-five.vercel.app/admin/courses/",
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),
